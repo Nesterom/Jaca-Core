@@ -10,6 +10,7 @@ public class Lesson4 {
         System.out.println ();
         for (int i:array) {
             System.out.println (Arrays.toString (array));
+            System.out.println ("Push");
         }
     }
 }
