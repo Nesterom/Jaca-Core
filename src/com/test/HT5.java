@@ -6,30 +6,27 @@ public class HT5 {
                          {2, 3, 0, 0},
                          {4, 5, 6, 0},
                          {7, 8, 9, 10}};
-        boolean notTriangle = false;
-        boolean notSquare = false;
+        boolean errorFlag = false;
+
 
 
         for (int i = 0; i < array.length; i++){
             if (array.length != array[i].length) {
-                notSquare = true;
+                errorFlag = true;
+                System.out.println ("Not square matrix");
                 break;
             }
             for (int j = i + 1; j < array[i].length; j++){
                 if (array[i][j] != 0) {
-                    notTriangle = true;
+                    errorFlag = true;
+                    System.out.println ("Not lower triangular matrix");
                     break;
                 }
             }
         }
-        if (notSquare == true){
-            System.out.println ("Not square matrix");
-        } else if (notTriangle == true){
-            System.out.println ("Not lower triangular matrix");
-        } else {
+        if (errorFlag != true){
             System.out.println ("lower triangular matrix");
         }
-
     }
 
 }
