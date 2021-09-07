@@ -11,19 +11,19 @@ public class HT4 {
         for (int i = 0; i < array.length; i++){
             for (int j = 0; j < array[i].length; j++){
                 if (array[i][j] > 0) {
-                    countPositive = countPositive + 1;
+                    countPositive++;
                 }
                 if (array[i][j] < 0) {
-                    countNegative = countNegative + 1;
+                    countNegative++;
                 }
             }
         }
         if (countPositive > countNegative){
-            System.out.println ("more positive values");
+            System.out.println("more positive values");
         } else if (countPositive < countNegative){
-            System.out.println ("more negative values");
+            System.out.println("more negative values");
         } else {
-            System.out.println ("equal number of positive and negative numbers");
+            System.out.println("equal number of positive and negative numbers");
         }
 
 
