@@ -13,19 +13,19 @@ public class HT5 {
         for (int i = 0; i < array.length; i++){
             if (array.length != array[i].length) {
                 errorFlag = true;
-                System.out.println ("Not square matrix");
+                System.out.println("Not square matrix");
                 break;
             }
             for (int j = i + 1; j < array[i].length; j++){
                 if (array[i][j] != 0) {
                     errorFlag = true;
-                    System.out.println ("Not lower triangular matrix");
+                    System.out.println("Not lower triangular matrix");
                     break;
                 }
             }
         }
-        if (errorFlag != true){
-            System.out.println ("lower triangular matrix");
+        if (!errorFlag){
+            System.out.println("lower triangular matrix");
         }
     }
 
