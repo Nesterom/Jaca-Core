@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class HT7 {
     public static void main (String[] args) {
-        int[] array = {1, 0, 4, 8, 9, 1};
+        int[] array = {2, 1, 5, 6, 0, 3, 10, 20};
         int result = 0;
         int tempMax = 0;
         int tempMinusOne = 0;
@@ -23,7 +23,7 @@ public class HT7 {
 
             for (int i = 2; i < array.length; i++){
                 currentValue = array[i];
-                if (tempMinusOne >= (currentValue + tempMinustwo)) {
+                if (tempMinusOne > (currentValue + tempMinustwo)) {
                     tempMax = tempMinusOne;
                     tempMinusOne = currentValue + tempMinustwo;
                     tempMinustwo = tempMax;
