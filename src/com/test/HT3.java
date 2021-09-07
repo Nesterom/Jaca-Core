@@ -11,7 +11,7 @@ public class HT3 {
             revers[array.length - 1 - i] = array[i];
         }
 
-        System.out.println (Arrays.toString (revers));
+        System.out.println(Arrays.toString (revers));
     }
 
 }
