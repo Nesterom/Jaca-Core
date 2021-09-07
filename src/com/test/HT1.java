@@ -10,6 +10,6 @@ public class HT1 {
                 res = res + array[i];
             }
         }
-        System.out.println (res);
+        System.out.println(res);
     }
 }
