@@ -31,9 +31,9 @@ public class HT6 {
                 }
             }
         }
-        if (errorFlag != true){
-            for (int i = 0; i < arrayResult.length; i++){
-                System.out.println (Arrays.toString (arrayResult[i]));
+        if (!errorFlag){
+            for (int[] ints : arrayResult) {
+                System.out.println (Arrays.toString (ints));
             }
 
         }

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class HT7 {
     public static void main (String[] args) {
-        int[] array = {2, 1, 5, 6, 0, 3, 10, 20};
+        int[] array = {1, 2, 5, 6, 0, 3, 10, 20};
         int result = 0;
         int tempMinusOne = 0;
         int tempMinustwo = 0;
