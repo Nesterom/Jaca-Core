@@ -7,6 +7,7 @@ public class Demo {
         Car car3 = new Car ();
 
 
+
         car1.setLable (Lable.KIA);
         car1.setModel (Models.RIO);
         car1.setColor ("Red");
